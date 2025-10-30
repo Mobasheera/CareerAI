@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #1e1b4b, #2e1065, #0f172a);
+    color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* Glassmorphism card */
+.glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Button Glow */
+.btn-glow {
+    background: linear-gradient(90deg, #6366f1, #a855f7);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+.btn-glow:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 35px rgba(99, 102, 241, 0.8);
+}
+
+/* Floating Effect */
+.float-y {
+    animation: floatY 6s ease-in-out infinite;
+}
+@keyframes floatY {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-12px); }
+}
